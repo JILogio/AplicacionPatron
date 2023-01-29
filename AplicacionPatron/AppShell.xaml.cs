@@ -9,5 +9,6 @@ public partial class AppShell : Shell
 		InitializeComponent();
 
 		Routing.RegisterRoute("AddCarro", typeof(CarroIndex));
-	}
+        Routing.RegisterRoute("BuyCarro", typeof(BuyIndex));
+    }
 }

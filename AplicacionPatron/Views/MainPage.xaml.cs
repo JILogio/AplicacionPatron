@@ -7,13 +7,13 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	public async void AddClicked(object sender,EventArgs e)
+	private async void AddClicked(object sender,EventArgs e)
 	{
-
+		await Shell.Current.GoToAsync("AddCarro");
 	}
 
-	public async void ComprarClicked(object sender,EventArgs e)
+	private async void ComprarClicked(object sender,EventArgs e)
 	{
-
+		await Shell.Current.GoToAsync("BuyCarro");
 	}
 }

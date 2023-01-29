@@ -4,12 +4,14 @@
              x:Class="AplicacionPatron.Views.MainPage"
              Title="Pagina de compra">
     
-    <VerticalStackLayout Padding="20" Spacing="10">
+    <VerticalStackLayout Padding="20" Spacing="100">
         <Label Text="Bienvenido a la Pagina de compra de carros" HorizontalOptions="Center" FontSize="20" TextColor="DarkBlue"/>
 
-        <HorizontalStackLayout>
-            <Button Text="Agregar carro" Clicked="AddClicked" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Comprar carro" Clicked="ComprarClicked" HorizontalOptions="FillAndExpand"/>
-        </HorizontalStackLayout>
+        <Grid RowDefinitions="*" ColumnDefinitions="*,*">
+            <Button Text="Agregar carro" Clicked="AddClicked" Grid.Row="0" Grid.Column="0"/>
+            <Button Text="Comprar carro" Clicked="ComprarClicked" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
+            
     </VerticalStackLayout>
 </ContentPage>
+    

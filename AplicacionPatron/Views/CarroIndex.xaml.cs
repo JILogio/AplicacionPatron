@@ -14,8 +14,8 @@ public partial class CarroIndex : ContentPage
 	{
 		car.Marca = marca.Text;
 		car.Modelo = modelo.Text;
-		car.costo = ((decimal)cost.TextTransform);
-		if(String.IsNullOrEmpty(car.Marca) || String.IsNullOrEmpty(car.Modelo) || car.costo > 0)
+		car.costo = decimal.Parse(cost.Text);
+		if(String.IsNullOrEmpty(car.Marca) || String.IsNullOrEmpty(car.Modelo) || car.costo <= 0)
 		{
 			return;
 		}

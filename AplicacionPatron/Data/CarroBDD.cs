@@ -24,11 +24,12 @@ namespace AplicacionPatron.Data
                 return;
 
             conn = new SQLiteConnection(_dbPath);
-            conn.CreateTable<CarroBDD>();
+            conn.CreateTable<Carro>();
         }
 
         public int AddCarro(Carro car)
         {
+            Init();
             if (car.id != 0)
                 return conn.Update(car);
             else
@@ -41,7 +42,7 @@ namespace AplicacionPatron.Data
             return conn.Delete(car);
         }
 
-        public List<Carro> GetCarro()
+        public List<Carro> GetCarros()
         {
             Init();
             List<Carro> carros = conn.Table<Carro>().ToList();
