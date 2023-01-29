@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:AplicacionPatron.Models"
+             x:Class="AplicacionPatron.Views.CarroIndex"
+             Title="Agregar Carro">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+         <Label Text="Marca"/>
+         <Entry x:Name="marca"/>
+         <Label Text="Modelo"/>
+         <Entry x:Name="modelo"/>
+         <Label Text="Costo"/>
+         <Entry x:Name="cost"/>
+
+         <Button Text="Guardar" Clicked="GuardarClicked"/>
+         <Button Text="Cancelar" Clicked="CancelarClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
