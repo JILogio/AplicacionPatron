@@ -5,7 +5,10 @@
              Title="Pagina de compra">
     
     <VerticalStackLayout Padding="20" Spacing="100">
-        <Label Text="Bienvenido a la Pagina de compra de carros" HorizontalOptions="Center" FontSize="20" TextColor="DarkBlue"/>
+        <Label Text="Bienvenido a la Pagina de compra de carros" HorizontalOptions="Center" FontSize="20" />
+        <Label Text="Gustavo Guevara" HorizontalOptions="Center" FontSize="20" />
+        <Label Text="Erick Rosero" HorizontalOptions="Center" FontSize="20" />
+        <Label Text="Ismael Ordoñez" HorizontalOptions="Center" FontSize="20" />
 
         <Grid RowDefinitions="*" ColumnDefinitions="*,*">
             <Button Text="Agregar carro" Clicked="AddClicked" Grid.Row="0" Grid.Column="0"/>
@@ -14,4 +17,5 @@
             
     </VerticalStackLayout>
 </ContentPage>
+
     
